@@ -100,10 +100,10 @@ export default class ProgressBar extends Component {
 }
 
 ProgressBar.propTypes = {
-    children: PropTypes.node,
+    children: View.propTypes.node,
     style: View.propTypes.style,
     textStyle: View.propTypes.style,
-    onProgress: PropTypes.func,
+    onProgress: View.propTypes.func,
 };
 
 ProgressBar.defaultProps = defaultProps;

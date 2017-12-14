@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component} from 'react';
+import  {PropTypes} from 'prop-types';
 import {
   View,
   Text,
@@ -100,10 +101,10 @@ export default class ProgressBar extends Component {
 }
 
 ProgressBar.propTypes = {
-    children: View.propTypes.node,
+    children: PropTypes.node,
     style: View.propTypes.style,
     textStyle: View.propTypes.style,
-    onProgress: View.propTypes.func,
+    onProgress: PropTypes.func,
 };
 
 ProgressBar.defaultProps = defaultProps;

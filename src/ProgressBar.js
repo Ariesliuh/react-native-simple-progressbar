@@ -4,6 +4,7 @@ import {
   View,
   Text,
   Animated,
+  ViewPropTypes,
 } from 'react-native';
 
 const styles = require('./style');
@@ -102,8 +103,8 @@ export default class ProgressBar extends Component {
 
 ProgressBar.propTypes = {
     children: PropTypes.node,
-    style: View.propTypes.style,
-    textStyle: View.propTypes.style,
+    style: ViewPropTypes.style,
+    textStyle: ViewPropTypes.style,
     onProgress: PropTypes.func,
 };
 
